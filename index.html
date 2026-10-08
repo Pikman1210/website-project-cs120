@@ -9,15 +9,17 @@
 </head>
 <body>
 
-<!-- Visitor Tracking and load count.js-->
+<!-- Load count.js and visitor counter-->
 <script>
     var t = setInterval(function() {
         if (window.goatcounter && window.goatcounter.visit_count) {
             clearInterval(t)
-            window.goatcounter.visit_count({append: 'body'})
+            window.goatcounter.visit_count({append: 'analytics'})
         }
     }, 100)
 </script>
+
+<!-- Load analytics-->
 <script data-goatcounter="https://pikman.goatcounter.com/count"
         async src="//gc.zgo.at/count.js">
 </script>
@@ -62,14 +64,14 @@
         <!-- TODO: replace this paragraph with 3-5 sentences about yourself: your interests in CS,
              what you're currently learning, and what kind of problems you like solving. -->
         <p>
-          My name is Abigail Varney, and I've been interested in computers for easily over 10 years.
+          My name is Abigail Varney, and I've been interested in computers for over 10 years.
           I'm currently learning java, with an interest in python for general use and C# for game development.
           I enjoy working on passion projects, and other small projects from ideas I may have. Additionally,
           I love learning new languages, and have a strong fascination with the engineering behind computers and their inner-workings.
         </p>
-        <p>
+        <!-- <p>
           This website has NO AI usage and NEVER will. Using any of its content for anything AI related is strictly prohibited.
-        </p>
+        </p> -->
       </div>
     </section>
 
@@ -196,6 +198,18 @@
             4.0 GPA in previous University courses and High School.
           </p>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ Analytics ============ -->
+    <section id="analytics" class="section">
+      <div class="container">
+        <h2>Page Visitors</h2>
+        <ul class="analytics">
+          <p>
+                3
+          </p>
+        </ul>
       </div>
     </section>
 
